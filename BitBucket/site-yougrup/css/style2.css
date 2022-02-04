@@ -1,0 +1,916 @@
+/*
+************** YOUGROUP CSS STRUCTURE *******************
+************* Linkado ao ../Yougroup.html ***************
+*********************************************************
+************** Data de inicio: 15/05 ******************** 
+*/
+
+
+
+/*******************************************************************************************************************************************************************/
+/* ***** ***** FONTS ***** ******
+
+***OBSERVAÇÕES
+************** SEGOE UI Family não está funcionando.
+****************************************************
+
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;0,700;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+@font-face {
+    font-family: decker;
+    src: url('/fonts/ttf/Decker.ttf');
+}
+
+@font-face {
+  font-family: segoe;
+  src: url('fonts/ttf/Segoe-UI.ttf'); 
+}
+
+@font-face {
+  font-family: segoeBold;
+  src: url('/fonts/ttf/Segoe-UI-Bold-Italic.ttf');
+}
+
+
+@font-face {
+  font-family: segoeBold;
+  src: url('/fonts/ttf/Decker.ttf');
+
+}
+
+@font-face {
+  font-family: kamn;
+  src: url('/fonts/ttf/kamn.ttf'); 
+}
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+**
+** AJUSTES GERAIS
+**
+*/
+/***********************/
+/**********************/
+
+
+
+body {
+background-color: white;
+text-decoration: none;
+overflow-x:hidden;
+width: 100%;
+
+
+}
+
+/********** FIM AJUSTES GERAIS *************/
+/******************************************/
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+** INICIO
+** HEADER 
+**
+*/
+/***********************/
+/**********************/
+
+
+header {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+
+#quemsomos {
+  font-size: 2.5em;
+  font-weight: bold;
+font-weight: bold;
+text-align: center;
+text-transform: uppercase;
+
+
+
+/* fundo gradiente */
+background-image: linear-gradient(90deg, rgba(82,255,233,1) 0%, rgba(181,143,174,1) 50%, rgba(122,0,97,1) 100%);
+/* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+background-clip: text;
+-webkit-background-clip: text;
+/* a cor do texto deve estar como transparent */
+color: transparent;
+/** animation **/
+animation:  quemsomos 10s infinite;   
+}
+
+
+@keyframes quemsomos {
+0%{background-image: linear-gradient(90deg, rgba(82,255,233,1) 0%, rgba(181,143,174,1) 50%, rgba(122,0,97,1) 100%);}
+60%{color: rgba(181,143,174,1);}
+70%{background-image:linear-gradient(90deg, rgba(82,255,233,1) 0%, rgba(181,143,174,1) 50%, rgba(122,0,97,1) 100%);}
+80%{color: rgb(170, 238, 238);}
+100% {background-image: linear-gradient(90deg, rgba(82,255,233,1) 0%, rgba(181,143,174,1) 50%, rgba(122,0,97,1) 100%);}
+
+}
+
+
+
+#menuprincipal{
+  font-size: 1.9em;
+} 
+
+a.textdark:hover {
+
+  color:blue;
+}
+
+
+
+
+/********** FIM HEADER *************/
+/***********************************/
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+** INICIO
+** APRESENTAÇÃO
+**
+*/
+/***********************/
+/**********************/
+
+
+
+
+#apresentacao { max-height:1000px; width:100%; padding-left: 9em; 
+
+}
+
+.apresentacao { transform: translate(15%,0%);
+
+}
+
+
+
+.apresentacao.position-absolute{z-index:6;}
+
+
+
+
+
+
+
+
+/**********************************************/
+/**ICONS FRENTE**/
+
+.icon{ filter: blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  
+  
+  
+  animation: iconfrente 1s ease-in-out; opacity: 1;}
+/**********************************************/
+
+
+
+/**********************************************/
+/** ANIMAÇÃO ICONS FRENTE **/
+
+@keyframes iconfrente { 
+0% {filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  
+  opacity:0; transform: translate(20%,0%);}
+
+
+}
+/**********************************************/
+
+
+
+/**********************************************/
+/** POSICIONAMENTO ICONS FRENTE **/
+
+.iconlogo {width:16.5%; 
+  transform: translate(135%,60%);
+}
+.icon1 {width:3%;
+
+  transform: translate(1300%,450%);}
+.icon2 {width:7%;
+  transform: translate(-10%, 420%); }
+.icon3 {width:7%;
+  transform: translate(420%, -100%); }
+.icon4 {width:25%;
+  transform: translate(40%,0%);}
+
+/**********************************************/
+
+
+/**********************************************/
+/**FOTOS**/
+/** ANIMAÇÃO FOTOS**/
+.foto{ transform: translate(-4%,0%);
+  
+  
+  animation: mexer 3s ease-in-out;opacity:1;}
+
+@keyframes mexer {
+  
+0% {filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  
+  
+  transform: translate(0%,0%); transform: rotate(-400deg);opacity:0;}
+
+
+}
+/**********************************************/
+
+/**********************************************/
+/** POSICIONAMENTO FOTOS **/
+.foto1 {width:30%;
+  transform: translate(33%,0%); z-index: 7;}
+
+.foto2 {width:30%;
+  transform: translate(30%,-5%); z-index: 6;}
+
+
+.foto3 {width:36%;
+  transform: translate(39%,-13%); z-index: 5;}
+
+.foto4 {width:30%;
+  transform: translate(19%,-10%); z-index: 8;}
+/**********************************************/
+
+
+/**********************************************/
+/**ICONS FUNDO**/
+/* ANIMAÇÃO ICONS FUNDO */
+.iconfundo {z-index: -99; animation: iconfundo 2s ease-in-out; opacity: 1;}
+@keyframes iconfundo {
+0% {filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  
+  opacity:0;transform: translate(-30%,0%);}
+
+50% {}
+
+100% {}
+
+}
+
+
+/**********************************************/
+/** POSICIONAMENTO ICONS FUNDO **/
+
+
+.iconfundo1 {width:16%;
+  transform: translate(-100%,-270%);}
+
+
+.iconfundo2 {width:18%;             
+  transform: translate(-16%, -190%);}
+
+
+  .iconfundo3{width:15%; 
+    transform: translate(140%,-190%); }
+
+.iconfundo4 {width:20%;
+  transform: translate(40%,-95%);}
+
+
+.iconfundo5 {width:23%;
+  transform: translate(-79%,-100%);}
+
+
+  .iconfundo6 {width:18%;
+    transform: translate(360%,-365%);}
+/**********************************************/
+
+
+
+
+/********** FIM APRESENTAÇÃO *************/
+/***********************************/
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+** INICIO
+** INFORMAÇÕES
+**
+*/
+/***********************/
+/**********************/
+
+#informacoes {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#informacoes h1 {
+font-size: 300%;
+font-weight: bold;
+
+}
+
+#informacoes p {
+  font-size: 170%;
+
+
+}
+
+
+/********** FIM INFORMAÇÕES *************/
+/****************************************/
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+** INICIO
+** CUBOS
+**
+*/
+/***********************/
+/**********************/
+
+
+
+#cubos {max-width:100%;}
+.cubos {} /** CASO HAJA NECESSIDADE DE MODIFICAÇÃO GERAL NOS CUBOS **/
+
+
+.textocuboprincipal{font-size: 5em; font-size: 3.5vw; color:white; opacity:1; }
+.textocubosecundario{
+  font-size: 4.5em; font-size: 3.0vw; color:black; opacity:0.2}
+.textocubo {    
+  
+  bottom: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+  z-index:9999;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:bold;}
+
+
+  .ajustcubo {
+    bottom: 10px;
+    right: 10px;
+}
+
+.servico {padding-right:0.8em}
+.clientes {}
+.contato {padding-right:0.8em}
+
+
+
+
+
+h3.textocubo{transform: translate(1%,-120%)}
+
+
+@keyframes moveimgcubo {
+
+  50%{transform: translate(-8%,0%);
+}
+}
+
+.cubo1 {transform: translate(15%,2%); width:70%; z-index: -99999}
+.cubo1 img {max-width:95%;}
+.cubo2 {}
+.cubo3 {transform: translate(-10%,2%); max-width:70%; z-index: -99999}
+.cubo3 img {max-width:95%;}
+.cubofoto {opacity:0.4; background-color:red;}
+
+
+
+
+/** tentativa anterior de fazer cubos responsivos... **/
+/** na classe .cubos havia um overflow: hidden
+/** 
+.cubo1 {
+  width: 23%;
+  height: 0; A mágica do quadrado responsivo está aqui 
+  padding-bottom: 23%;  ... e está aqui 
+  margin: 1%;
+  float: left;
+  position: relative;
+  transform: translate(8%,0%);
+  background-color: rgb(184, 221, 210);}
+
+
+  .cubo1 h1 {
+
+  }
+
+
+  .cubo1:hover {
+    background-color: rgb(141, 219, 196);
+  }
+
+
+
+
+
+
+
+
+.cubo2 {
+
+  width: 26%;
+  height: 0; /* A mágica do quadrado responsivo está aqui */
+/*  padding-bottom: 26%;  ... e está aqui. Ajuste a altura aqui. 
+  margin: 1%;
+  float: left;
+  position: relative;
+ transform: translate(0%, -5%);
+  
+  background-color: rgb(170, 26, 139);}
+
+
+.cubo2 img {width:100%}
+
+
+.cubo2:hover{
+  background-color: rgb(201, 57, 169); 
+}
+
+
+
+
+  
+.cubo3 { 
+  
+  z-index: -9999;
+  width: 23%;
+  height: 0; 
+  padding-bottom: 23%; 
+  margin: 1%;
+  float: left;
+  position: relative;
+  transform: translate(-9%, 0%);
+  
+  background-color:rgb(233, 128, 228);}
+
+  .cubo3:hover {
+background-color:rgb(240, 163, 236);
+
+  }
+
+
+  /** fim tentativa 1 cubos responsivos. **/
+
+/********** FIM CUBOS *************/
+/****************************************/
+
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+** INICIO
+** MURAL
+**
+*/
+/***********************/
+/**********************/
+
+
+
+#mural {}
+.muralimgs img {width:90%;height:90%;}
+.muralimg:hover {opacity:0.5;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** OPCIONAIS **/
+.border{border:1px solid red;}
+/***************/
+
+
+
+
+
+
+/** INICIO FOOTER **/
+
+
+.btnfooter {text-align:right}
+.footer {font-size:100%;
+  text-decoration:none;
+color: grey;
+font-family: 'Josefin Sans', sans-serif;}
+
+.footer:hover {
+  color: grey;
+
+}
+
+
+
+
+
+
+
+
+
+
+/***********************
+************************
+**
+** INICIO
+** MEDIA QUERIES
+**
+***********************
+***********************/
+
+
+/*******************************************************************************************************************************************************************/
+
+
+@media only screen and (max-width : 1730px) { 
+  .clientes {transform: translate(-90%,0%);}
+  .textocubo {font-size: 2.5em;padding-bottom:0.5em; padding-right:1.7em;}
+}
+
+
+/*****************************************************************
+INICIO (MAX-WIDTH: 1430PX)
+******************************************************************/
+
+
+
+@media only screen and (max-width : 1430px) {
+
+.textocubo {font-size: 2.5em;padding-bottom:0.5em;}
+  .servico {padding-right:1em; }
+  .clientes {padding-right:1em; }
+  .contato {padding-right:1em; }
+
+
+}
+
+
+
+
+/*****************************************************************
+FIM (MAX-WIDTH: 1430PX)
+******************************************************************/
+
+
+
+
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+/*****************************************************************
+INICIO (MAX-WIDTH: 1000PX)
+******************************************************************/
+
+
+
+@media only screen and (max-width: 1000px)  {
+  h1.textocubo{font-size: 9em; font-size: 5vw;padding-bottom:9em;color: gold;}
+  #menuprincipal {
+    font-size: 1em;
+  }
+  
+  #quemsomos {
+    font-size: 2em;
+  }
+
+
+  
+}
+
+
+
+/*****************************************************************
+FIM (MAX-WIDTH: 1000PX)
+******************************************************************/
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+INICIO (MAX-WIDTH: 744PX)
+******************************************************************/
+
+
+@media only screen and (max-width: 744px)   {
+
+  h1.textocubo{font-size: 9em; font-size: 5vw;padding-bottom:20em;color: red;}
+  #menuprincipal {
+    font-size: 1em;
+  }
+  
+  #quemsomos {
+    font-size: 3em;
+  }
+
+
+
+}
+
+
+/*****************************************************************
+FIM (MAX-WIDTH: 744PX)
+******************************************************************/
+
+
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+/*****************************************************************
+INICIO (MAX-WIDTH: 697PX)
+******************************************************************/
+
+
+/** ATT 17/05 **/
+/** SUBSTITUI A ULTIMA MEDIA QUERIE (QUE ERA ~ MAS-WIDTH: 600PX) PRA ESTE **/
+/** INUTILIZAVEL POR ENQUANTO, PORÉM CASO HAJA A NECESSIDADE USO, ESTÁ AÍ **/
+
+
+
+/************************************************************************************************************************************
+@media only screen and (max-width: 697px)   {
+  
+
+  #menuprincipal {
+    font-size: 1em;
+  }
+  
+  #quemsomos {
+    font-size: 3em;
+  }
+
+  .muralimgs img {width:80%;height:80%;padding-top:3em; padding:1.5em; transform: translate(12%,0%);}
+  #cubos {transform: translate(-8%,0); width: 120%}
+}
+
+
+}
+
+/**********************************************************************************************************************************
+FIM (MAX-WIDTH: 697PX)
+******************************************************************/
+
+
+
+
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+INICIO (MAX-WIDTH: 600PX)
+******************************************************************/
+@media only screen and (max-width: 697px)   {.textocuboprincipal{transform: translate(-95%,0%);}
+  h1.textocubo{transform: translate(-20%,0%);font-size: 9em; font-size: 4vw;padding-bottom:940%; color: red;}
+#menuprincipal {
+  font-size: 1em;
+}
+
+#quemsomos {
+  font-size: 3em;
+}
+
+#apresentacao {padding-top:1em; height:20em;}
+
+
+
+.textocuboprincipal{font-size: 5em; font-size: 3.5vw; color:white; opacity:1}
+.textocubosecundario{font-size: 4.5em; font-size: 3.0vw; color:black; opacity:0.2}
+ 
+
+
+
+ /** CUBOS **/
+ 
+  #cubos {transform: translate(2%,0); width: 120%}
+.cubo1 {transform: translate(20%,2%); width:70%; z-index: -99999}
+.cubo1 img {max-width:95%;}
+.cubo2 {transform: translate(20%,2%); width:70%; z-index: -99999}
+.cubo2 img {max-width:95%;}
+.cubo3 {transform: translate(20%,2%); max-width:70%; z-index: -99999}
+.cubo3 img {max-width:95%;}
+.textocubo {padding-left:40em;font-size: 20em; font-size: 10vw;}
+
+
+.servico{padding-left:40em;padding-top:-10.1em;}
+
+/** FIM CUBOS **/
+
+
+
+/**  MURAL IMGS **/
+
+.muralimgs img {width:120%;height:120%;padding-top:3em; padding:1.5em; transform: translate(-10%,0%);}
+
+/** FIM MURAL IMGS **/
+
+
+
+
+/** FOOTER **/
+
+
+
+.footer {font-size: 12px;}
+
+#mural {}
+
+
+
+
+.btnfooter {text-align: center;}
+h6.footer {font-size:0.7em;}
+.logofooter {width:80%;}
+
+}
+
+
+
+
+/*****************************************************************
+FIM (MAX-WIDTH: 600PX)
+******************************************************************/
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/** FIM DOCUMENTO CSS **/

@@ -1,0 +1,488 @@
+/*
+************** YOUGROUP CSS STRUCTURE *******************
+************* Linkado ao ../Yougroup.html ***************
+*********************************************************
+************** Data de inicio: 15/05 ******************** 
+*/
+
+
+
+/*******************************************************************************************************************************************************************/
+/* ***** ***** FONTS ***** ******
+
+***OBSERVAÇÕES
+************** SEGOE UI Family não está funcionando.
+****************************************************
+
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;0,700;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+@font-face {
+    font-family: decker;
+    src: url('../fonts/ttf/Decker.ttf');
+}
+
+@font-face {
+  font-family: segoe;
+  src: url('../fonts/ttf/SEGUISYM.TTF'); 
+}
+
+@font-face {
+  font-family: segoebold;
+  src: url('../fonts/ttf/SEGUIBL.TTF'); 
+}
+
+
+@font-face {
+  font-family: segoeSYM;
+  src: url('../fonts/ttf/SEGUISYM.TTF');
+
+}
+
+@font-face {
+  font-family: kamn;
+  src: url('../fonts/ttf/kamn.ttf'); 
+}
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+**
+** AJUSTES GERAIS
+**
+*/
+/***********************/
+/**********************/
+
+
+
+body {
+background-color: white;
+text-decoration: none;
+overflow-x:hidden;
+width: 100%;
+height: 100%;
+
+
+}
+
+/********** FIM AJUSTES GERAIS *************/
+/******************************************/
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+** INICIO
+** HEADER 
+**
+*/
+/***********************/
+/**********************/
+
+
+
+header { 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  
+}
+
+a {color:rgb(66, 29, 58) !important; 
+  font-size: 10px;
+  font-size: 1.4vw;
+  font-weight: bold 700;
+  text-decoration: none;
+}
+
+a:hover {color:rgb(124, 45, 107) !important; }
+
+#quemsomos {
+  font-family: segoebold;
+  font-size: 10px;
+  font-size: 1.8vw;
+font-weight: bold;
+text-transform: uppercase;
+
+
+
+/* fundo gradiente */
+background-image: linear-gradient(90deg, rgba(82,255,233,1) 0%, rgba(181,143,174,1) 50%, rgba(122,0,97,1) 100%);
+/* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+background-clip: text;
+-webkit-background-clip: text;
+/* a cor do texto deve estar como transparent */
+color: transparent;
+/** animation **/
+animation:  quemsomos 10s infinite;   
+}
+
+
+@keyframes quemsomos {
+0%{background-image: linear-gradient(90deg, rgba(82,255,233,1) 0%, rgba(181,143,174,1) 50%, rgba(122,0,97,1) 100%);}
+60%{color: rgba(181,143,174,1);}
+70%{background-image:linear-gradient(90deg, rgba(82,255,233,1) 0%, rgba(181,143,174,1) 50%, rgba(122,0,97,1) 100%);}
+80%{color: rgb(170, 238, 238);}
+100% {background-image: linear-gradient(90deg, rgba(82,255,233,1) 0%, rgba(181,143,174,1) 50%, rgba(122,0,97,1) 100%);}
+
+}
+
+
+
+#menuprincipal{
+  font-size: 1.9em;
+} 
+
+a.textdark:hover {
+
+  color:blue;
+}
+
+
+
+
+/********** FIM HEADER *************/
+/***********************************/
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+** INICIO
+** APRESENTAÇÃO
+**
+*/
+/***********************/
+/**********************/
+
+
+
+
+.apresentacao{min-width:9em;}
+
+
+
+.kitfotos{ z-index:1; animation: mexer 6s ease-in-out;}
+.iconsfundo{animation: iconfundo 8s ease-in-out; z-index:-4}
+.iconsfrente{animation: iconfrente 3s ease-in-out; z-index:4}
+
+
+
+@keyframes mexer { 
+  0% {filter: blur(40px);
+    -webkit-filter: blur(40px);
+    -moz-filter: blur(40px);
+
+    transform: rotate(-100deg);   opacity:0;}
+
+}
+
+
+
+
+
+
+/**********************************************/
+/** ANIMAÇÃO ICONS FRENTE **/
+
+@keyframes iconfrente { 
+  0% {filter: blur(40px);
+    -webkit-filter: blur(40px);
+    -moz-filter: blur(40px);
+    
+    opacity:0; transform: translate(20%,0%);}
+
+}
+
+
+/*********************************************/
+
+/**********************************************/
+/** ANIMAÇÃO ICONS FUNDO **/
+
+@keyframes iconfundo { 
+ 
+  0% {filter: blur(4px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    
+    opacity:0;transform: translate(-30%,0%);}
+ 
+ 
+ 
+  
+}
+  
+  
+  
+  
+  /*********************************************/
+
+/***********************/
+/**********************/
+/*
+** INICIO
+** INFORMAÇÕES
+**
+*/
+/***********************/
+/**********************/
+
+#informacoes {
+
+  font-weight: bold;
+}
+
+#informacoes h1 {
+  font-family: segoebold;
+font-size: 300%;
+
+
+}
+
+#informacoes p {
+  font-family: segoe;
+  font-weight: bold;
+  font-size: 170%;
+
+
+}
+
+
+/********** FIM INFORMAÇÕES *************/
+/****************************************/
+/*******************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+** INICIO
+** CUBOS
+**
+*/
+/***********************/
+/**********************/
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+
+#cubos img {max-width:80%;position: relative; z-index:-9;}
+#cubos h1 {font-family: segoebold;
+  font-weight: bold;
+  
+  position:absolute;  z-index:9999;}
+
+
+.cubos {max-width:80%; filter:grayscale(0); object-fit: cover;} 
+.cubos:hover {opacity:0;}
+
+.cubo2 img { animation: image 0.1s infinite;}
+
+
+@keyframes image {
+  
+  50% {filter:grayscale(13%)}
+  
+}
+
+
+
+
+
+.cubo2 h1 {animation: animatecubo 5s infinite;
+  
+  
+  color: white;font-size:5px;font-size:6vw;}
+.cubo1 h1, .cubo3 h1 {animation: animatecubo2 5s infinite;opacity: 0.5;font-size:5px;font-size: 5vw;}
+
+
+
+
+@keyframes animatecubo {
+  
+  50% {filter:blur(3px); color: rgb(221, 130, 217);}
+  
+}
+
+
+
+
+@keyframes animatecubo2 {
+
+  50% {opacity:0.9;}
+}
+
+
+
+
+
+.cubo1 {transform: translate(22%,0%);z-index:-9999}
+.cubo2 {z-index:9999;}
+.cubo3 {transform: translate(-22%,0%);z-index:-9999}
+
+/*******************************************************************************************************************************************************************/
+/***********************/
+/**********************/
+/*
+** INICIO
+** MURAL
+**
+*/
+/***********************/
+/**********************/
+
+
+
+.muralimgs img {
+width: 100%;
+height: auto;
+  
+  
+  max-width:40em;min-width:8em;padding-left:5px;}
+.muralimgs:hover {opacity:0.5;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** OPCIONAIS **/
+.border{border:1px solid red;}
+/***************/
+
+
+
+
+
+
+/** INICIO FOOTER **/
+
+
+.btnfooter {text-align:right}
+.footer {font-size:100%;
+  text-decoration:none;
+color: grey;
+font-family: 'Josefin Sans', sans-serif;}
+
+.footer:hover {
+  color: grey;
+
+}
+
+
+
+
+
+@media (max-width: 575.98px) { }
+
+
+@media (max-width: 767.98px) {#quemsomos {transform: translate(5%,0%); font-size: 6.8vw;}
+a {font-size: 3.8vw;}#cubos h1 {font-size: 4em;} .cubos{padding-bottom:5em;} .cubo1 {transform: translate(00%,0%);} .cubo3 {transform: translate(00%,0%); }
+img.logofooter{max-width:90%;}
+
+@media (max-width: 991.98px) { }
+
+@media (max-width: 1199.98px) { ... }
+
+@media (max-width: 1399.98px) { }
+
+
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/** FIM DOCUMENTO CSS **/
